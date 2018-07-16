@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  author = 'Dubya';
+  category = 'devtest';
+  state = {
+    id: 1
+  };
+
 }
