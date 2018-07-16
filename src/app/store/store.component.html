@@ -1,0 +1,23 @@
+<div>
+  store works!
+  <h1>ignatz1 {{ state.ignatz }}</h1>
+  <h1>utils {{ state.isx }}</h1>
+  <h1>utils {{ state.xme() }}</h1>
+  <h1>utils {{ state.xme() }}</h1>
+  <h1>utils {{ state.xme('impossible') }}</h1>
+  <h1>ignatz2 {{ state.ignatz }}</h1>
+  <h1>fignaccio {{ state.fignaccio }}</h1>
+
+<h1>Users</h1>
+
+<ul>
+  <li *ngFor="let user of state.users$">
+    <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
+
+    <ul>
+      <li>{{ user.email }}</li>
+      <li><a href="http://{{ user.website }}">{{ user.website }}</a></li>
+    </ul>
+  </li>
+</ul>
+</div>

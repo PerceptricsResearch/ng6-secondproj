@@ -1,0 +1,26 @@
+
+<div>
+  <div>
+    this is wlbsidebar...it is {{ pstate().status }}
+  </div>
+</div>
+<nav>
+    <ul>
+      <li>
+        <a routerLink="" [class.activated]="currentUrl == '/'">
+          <i class="material-icons">view_headline</i>
+        </a>
+      </li>
+      <li>
+        <a routerLink="posts" [class.activated]="currentUrl == '/posts'">
+          <i class="material-icons">message</i>
+        </a>
+      </li>
+      <li>
+          <a routerLink="dat" [class.activated]="currentUrl == 'http://datmoments.com'">
+            <i class="material-icons">face</i>
+          </a>
+      </li>
+    </ul>
+  </nav>
+
